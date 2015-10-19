@@ -125,11 +125,11 @@ public class JSONDocTypeBuilder {
 		{
 			ParameterizedType ptype = (ParameterizedType) type;
 			if(ptype.getOwnerType() != null)
-				typeName = ptype.getRawType().getTypeName();
+				typeName = ptype.getRawType().toString();
 		}
 
 		if(typeName == null)
-			typeName = type.getTypeName();
+			typeName = type.toString();
 
 		//For nested classes, remove the $ and add a dot notation so its a valid
 		//java reference.
