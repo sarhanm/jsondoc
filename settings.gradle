@@ -1,0 +1,14 @@
+rootProject.name = 'jsondoc-master'
+include ':jsondoc-core'
+include ':jsondoc-springmvc'
+include ':jsondoc-maven-plugin'
+include ':jsondoc-ui'
+include ':jsondoc-ui-webjar'
+include ':spring-boot-starter-jsondoc'
+
+project(':jsondoc-core').projectDir = "$rootDir/jsondoc-core" as File
+project(':jsondoc-springmvc').projectDir = "$rootDir/jsondoc-springmvc" as File
+project(':jsondoc-maven-plugin').projectDir = "$rootDir/jsondoc-maven-plugin" as File
+project(':jsondoc-ui').projectDir = "$rootDir/jsondoc-ui" as File
+project(':jsondoc-ui-webjar').projectDir = "$rootDir/jsondoc-ui-webjar" as File
+project(':spring-boot-starter-jsondoc').projectDir = "$rootDir/spring-boot-starter-jsondoc" as File

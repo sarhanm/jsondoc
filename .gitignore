@@ -10,3 +10,10 @@
 *.ipr
 *.iws
 *.eml
+
+# Gradle files
+build/
+bin/
+gradle/
+gradlew
+gradlew.bat
