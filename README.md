@@ -1,4 +1,11 @@
 # JSONDoc
+
+# Differences in this fork:
+
+I wanted a way to generate a client from the JSON code (gradle plugin forthcoming). The easiest way to do this was to depend on a java 8 method on the Type interface. I don't have time to make this work for older versions of java (and my code is all using java 8 anyways). The changes are simple enough. Just add the fully qualified name of classes of return types and method parameters.
+
+I also added some gradle setup and using my versioner to version the project
+
 Official website: http://jsondoc.org
 
 [![Build Status](https://travis-ci.org/fabiomaffioletti/jsondoc.svg?branch=master)](https://travis-ci.org/fabiomaffioletti/jsondoc) <a href="https://flattr.com/submit/auto?user_id=fabiomaffioletti&url=http%3A%2F%2Fjsondoc.org&title=JSONDoc&category=software" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=fabio%2emaffioletti%40gmail%2ecom&lc=US&item_name=JSONDoc&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted" target="_blank">
